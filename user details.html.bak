@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>user details</title>
+ <script>
+ function details(){
+	var strname=document.getElementById("name").value;
+	var stremail=document.getElementById("email").value;
+	var strphone=document.getElementById("phone").value;
+ 	var strimage=document.getElementById("image").value;
+	document.getElementById('res_sno').textContent='1';
+	document.getElementById('res_name').textContent=strname;
+	document.getElementById('res_email').textContent=stremail;
+	document.getElementById('res_phone').textContent=strphone;	
+	document.getElementById('res_image').textContent=strimage;
+ }
+ </script>
+ </head>
+ <body>
+  <h1> <center> User Details</center></h1>
+  <center><table>
+	<tr>
+		<td>Name </td>
+		<td>Email</td>
+		<td>Phone</td>
+		<td>Image</td>
+	</tr>
+	<tr>
+		<td><input type="text" id="name" name="name"></td>
+		<td><input type="text" id="email" name="email"></td>
+		<td><input type="text" id="phone" name="phone"></td>
+		<td><input type="text" id="image" name="image"></td>
+	</tr>
+	<tr><td></td><td></td><td></td><td>
+	 <button onclick="details()"> Submit</button></td>
+
+	</tr>
+	</table></center>
+
+<br><br><br><br>
+	<center><table border="1" width= "80%" 	>
+		<tr>	
+			<th>S.NO</th>
+			<th>NAME</th>
+			<th>EMAIL</th>
+			<th>PHONE</th>
+			<th>IMAGE</th>
+		</tr>
+		<tr>
+			<td><span id="res_sno"></td>
+			<td height="100"><span id="res_name"></td>
+			<td height="100"><span id="res_email"></td>
+			<td height="100"><span id="res_phone"></td>
+			<td height="100"><span id="res_image"></td>
+
+		</tr>
+	</table>
+	</center>
+ </body>
+</html>
